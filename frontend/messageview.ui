@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MessageView</class>
+ <widget class="QWidget" name="MessageView">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>509</width>
+    <height>571</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="TextBrowser" name="textBrowser">
+     <property name="tabChangesFocus">
+      <bool>true</bool>
+     </property>
+     <property name="textInteractionFlags">
+      <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+     </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
+     </property>
+     <property name="openLinks">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Emoticons" name="emoticons" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>182</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="SearchEditor" name="searchEditor"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="helpLabel">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="buttons" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="leftMargin">
+       <number>4</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>4</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QToolButton" name="fontButton">
+        <property name="toolTip">
+         <string>Change Font or Text Colour</string>
+        </property>
+        <property name="text">
+         <string>A</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="emoticonButton">
+        <property name="toolTip">
+         <string>Insert Emoticon</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="icon">
+         <iconset resource="../lina-irc.qrc">
+          <normaloff>:/resources/icons/smile.png</normaloff>:/resources/icons/smile.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>18</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="LineEditor" name="lineEditor">
+     <property name="maxLength">
+      <number>400</number>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SearchEditor</class>
+   <extends>QLineEdit</extends>
+   <header>searcheditor.h</header>
+  </customwidget>
+  <customwidget>
+   <class>TextBrowser</class>
+   <extends>QTextBrowser</extends>
+   <header>textbrowser.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>LineEditor</class>
+   <extends>QLineEdit</extends>
+   <header>lineeditor.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Emoticons</class>
+   <extends>QWidget</extends>
+   <header>emoticons.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../lina-irc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
