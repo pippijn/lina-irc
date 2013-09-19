@@ -26,7 +26,7 @@ Settings Application::ApplicationData::settings;
 Application::Application(int& argc, char* argv[]) : QApplication(argc, argv)
 {
     setApplicationName("LinaIRC");
-    setOrganizationName("LinaIRC");
+    setOrganizationName("Xinutec");
     setApplicationVersion(Irc::version());
 
     QIcon icon;

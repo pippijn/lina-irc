@@ -1,0 +1,19 @@
+Source: lina-irc
+Section: devel
+Priority: optional
+Maintainer: Pippijn van Steenhoven <pip88nl@gmail.com>
+Uploaders: 
+  Pippijn van Steenhoven <pip88nl@gmail.com>
+Build-Depends:
+  libqt4-dev,
+  debhelper (>= 8.0.0)
+Standards-Version: 3.9.2
+Homepage: https://github.com/pippijn/lina-irc
+Vcs-Git: git://github.com/pippijn/lina-irc
+Vcs-Browser: https://github.com/pippijn/lina-irc
+
+Package: lina-irc
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Build system on top of autotools
+ TODO.
